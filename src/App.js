@@ -12,9 +12,15 @@ import {
   Platform,
   StyleSheet,
   Text,
-  View
+  View,
+  AppRegistry
 } from 'react-native';
-import Header from './components/ui/Header';
+
+import {
+  Header,
+  Container,
+  Button
+} from './components/ui';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -28,10 +34,13 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
+        <Container>
         <Header>Welcome</Header>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
+          <Text style={styles.welcome}>Welcome to React Native!</Text>
+          <Text style={styles.instructions}>To get started, edit App.js</Text>
+          <Text style={styles.instructions}>{instructions}</Text>
+          <Button> press me</Button>
+        </Container>
       </View>
     );
   }
