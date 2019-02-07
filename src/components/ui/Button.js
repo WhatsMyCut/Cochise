@@ -5,7 +5,7 @@ import styled from 'styled-components/native';
 const ButtonBox = styled.TouchableHighlight.attrs({
   underlayColor: '#193441',
 })`
-  flex: 1;
+  flex: .15;
   align-items: center;
   justify-content: center;
   background-color: rgb(39, 41, 43);
@@ -16,7 +16,7 @@ const ButtonBox = styled.TouchableHighlight.attrs({
 const ButtonText = styled.Text`
   font-size: 16;
   font-family: RacingSansOne-Bold;
-  color: ${props => props.text == "Go" ? "green" : "orange"};
+  color: ${props => props.text == 'Go' ? 'green' : 'orange'};
 `;
 
 handleButtonPress = (value) => {
@@ -24,7 +24,7 @@ handleButtonPress = (value) => {
 };
 
 export default Button = ({text}) => (
-  <ButtonBox onPress={() => handleButtonPress(this)}>
+  <ButtonBox onPress={(event) => handleButtonPress(event.target)}>
     <ButtonText text={text}>{text}</ButtonText>
   </ButtonBox>
 );

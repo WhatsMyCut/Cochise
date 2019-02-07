@@ -12,8 +12,7 @@ import {
   Platform,
   StyleSheet,
   Text,
-  View,
-  AppRegistry
+  View
 } from 'react-native';
 
 import {
@@ -35,11 +34,11 @@ export default class App extends Component<Props> {
     return (
       <View style={styles.container}>
         <Container>
-        <Header>Welcome</Header>
+          <Header>Welcome</Header>
           <Text style={styles.welcome}>Welcome to React Native!</Text>
           <Text style={styles.instructions}>To get started, edit App.js</Text>
           <Text style={styles.instructions}>{instructions}</Text>
-          <Button> press me</Button>
+          <Button>Go</Button>
         </Container>
       </View>
     );
@@ -52,6 +51,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
+    width: '99%'
   },
   welcome: {
     fontSize: 20,
