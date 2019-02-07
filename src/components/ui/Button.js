@@ -13,18 +13,20 @@ const ButtonBox = styled.TouchableHighlight.attrs({
   margin: 5px;
 `;
 
+// eslint-disable no-confusing-arrow
 const ButtonText = styled.Text`
   font-size: 16;
   font-family: RacingSansOne-Bold;
   color: ${props => props.text == 'Go' ? 'green' : 'orange'};
 `;
 
-handleButtonPress = (value) => {
+const handleButtonPress = (value) => {
     alert(value);
 };
 
-export default Button = ({text}) => (
-  <ButtonBox onPress={(event) => handleButtonPress(event.target)}>
+// eslint-disable-next-line no-undef
+export default Button = ({ text }) => (
+  <ButtonBox onPress={event => handleButtonPress(event.target)}>
     <ButtonText text={text}>{text}</ButtonText>
   </ButtonBox>
 );
