@@ -33,5 +33,18 @@
       "./src/assets/fonts/",
       "./src/assets/images/"
     ]
-  }
+  },
+  "description": "### React Native app using `react-native-cli` for building Android and iOS outputs",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WhatsMyCut/Cochise.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WhatsMyCut/Cochise/issues"
+  },
+  "homepage": "https://github.com/WhatsMyCut/Cochise#readme"
 }

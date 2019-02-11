@@ -12,5 +12,4 @@ export default styled.Text`
   textAlignVertical: center;
   alignItems: center;
   justifyContent: center;
-  flexDirection: column;
 `;
