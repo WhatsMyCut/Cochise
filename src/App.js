@@ -1,7 +1,10 @@
 /**
  * Sample React Native App
  * https://github.com/facebook/react-native
+ *
+ * @format
  * @flow
+ * @lint-ignore-every XPLATJSCOPYRIGHT1
  */
 
 import React, { Component } from 'react';
@@ -12,10 +15,16 @@ import {
   View
 } from 'react-native';
 
+import {
+  Header,
+  Container,
+  Button
+} from './components/ui';
+
 const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' +
-    'Cmd+D or shake for dev menu',
-  android: 'Double tap R on your keyboard to reload,\n' +
+  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
+  android:
+    'Double tap R on your keyboard to reload,\n' +
     'Shake or press menu button for dev menu',
 });
 
@@ -24,15 +33,13 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit App.js
-        </Text>
-        <Text style={styles.instructions}>
-          {instructions}
-        </Text>
+        <Container>
+          <Header>Welcome</Header>
+          <Text style={styles.welcome}>Welcome to React Native!</Text>
+          <Text style={styles.instructions}>To get started, edit App.js</Text>
+          <Text style={styles.instructions}>{instructions}</Text>
+          <Button>Go</Button>
+        </Container>
       </View>
     );
   }
@@ -44,6 +51,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
+    width: '99%'
   },
   welcome: {
     fontSize: 20,

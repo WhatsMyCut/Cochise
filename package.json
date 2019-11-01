@@ -1,5 +1,5 @@
 {
-  "name": "Cochise",
+  "name": "cochise",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -7,16 +7,44 @@
     "test": "jest"
   },
   "dependencies": {
-    "react": "16.3.1",
-    "react-native": "^0.58.3"
+    "react": "16.6.3",
+    "react-native": "0.58.3",
+    "styled-components": "^4.1.1",
+    "webfontloader": "^1.6.28"
   },
   "devDependencies": {
-    "babel-jest": "23.0.1",
-    "babel-preset-react-native": "4.0.0",
-    "jest": "23.1.0",
-    "react-test-renderer": "16.3.1"
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "24.0.0",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "jest": "24.0.0",
+    "metro-react-native-babel-preset": "0.51.1",
+    "react-test-renderer": "16.6.3"
   },
   "jest": {
     "preset": "react-native"
-  }
+  },
+  "rnpm": {
+    "assets": [
+      "./src/assets/fonts/",
+      "./src/assets/images/"
+    ]
+  },
+  "description": "### React Native app using `react-native-cli` for building Android and iOS outputs",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WhatsMyCut/Cochise.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WhatsMyCut/Cochise/issues"
+  },
+  "homepage": "https://github.com/WhatsMyCut/Cochise#readme"
 }
